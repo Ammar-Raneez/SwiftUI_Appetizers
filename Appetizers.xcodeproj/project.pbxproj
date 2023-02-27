@@ -19,6 +19,7 @@
 		A028ABE029ACA67A0038F899 /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028ABDF29ACA6790038F899 /* AppetizerListCell.swift */; };
 		A028ABE229ACA6E40038F899 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028ABE129ACA6E40038F899 /* NetworkManager.swift */; };
 		A028ABE429ACA7540038F899 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028ABE329ACA7540038F899 /* APError.swift */; };
+		A028ABE629ACB8DA0038F899 /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028ABE529ACB8DA0038F899 /* AppetizerListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		A028ABDF29ACA6790038F899 /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
 		A028ABE129ACA6E40038F899 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A028ABE329ACA7540038F899 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
+		A028ABE529ACB8DA0038F899 /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				A028ABC929AC7E200038F899 /* AppetizerTabView.swift */,
 				A028ABD529AC7E720038F899 /* AppetizerListView.swift */,
 				A028ABE129ACA6E40038F899 /* NetworkManager.swift */,
+				A028ABE529ACB8DA0038F899 /* AppetizerListViewModel.swift */,
 				A028ABE329ACA7540038F899 /* APError.swift */,
 				A028ABDF29ACA6790038F899 /* AppetizerListCell.swift */,
 				A028ABD729AC7E7F0038F899 /* AppetizerOrderView.swift */,
@@ -163,6 +166,7 @@
 			files = (
 				A028ABE229ACA6E40038F899 /* NetworkManager.swift in Sources */,
 				A028ABCA29AC7E200038F899 /* AppetizerTabView.swift in Sources */,
+				A028ABE629ACB8DA0038F899 /* AppetizerListViewModel.swift in Sources */,
 				A028ABC829AC7E200038F899 /* AppetizersApp.swift in Sources */,
 				A028ABE029ACA67A0038F899 /* AppetizerListCell.swift in Sources */,
 				A028ABD829AC7E7F0038F899 /* AppetizerOrderView.swift in Sources */,
