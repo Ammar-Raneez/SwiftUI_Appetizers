@@ -8,10 +8,13 @@
 import Foundation
 
 final class AppetizerListViewModel: ObservableObject {
+    // @Published is required for realtime listening to values. @State is state
     @Published var appetizers: [Appetizer] = []
     @Published var alertItem: AlertItem?
+    @Published var isLoading = false
     
     func getAppetizers() {
+        isLoading = true
         NetworkManager.shared.getAppetizers { result in
             DispatchQueue.main.async {
                 switch result {
@@ -33,6 +36,8 @@ final class AppetizerListViewModel: ObservableObject {
 
                     print(error.localizedDescription)
                 }
+                
+                self.isLoading = false
             }
         }
     }
