@@ -7,8 +7,11 @@
 
 import SwiftUI
 
-@main
+@main // -> Signifies the start of an application
+// main function must be run. Called within the App protocol
+
 struct AppetizersApp: App {
+    // scene builder instead of view builder. Scene -> Window of app that can have multiple views
     var body: some Scene {
         WindowGroup {
             AppetizerTabView()

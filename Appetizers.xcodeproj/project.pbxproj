@@ -15,6 +15,8 @@
 		A028ABD829AC7E7F0038F899 /* AppetizerOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028ABD729AC7E7F0038F899 /* AppetizerOrderView.swift */; };
 		A028ABDA29AC7E880038F899 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028ABD929AC7E880038F899 /* AccountView.swift */; };
 		A028ABDC29AC7E8C0038F899 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028ABDB29AC7E8C0038F899 /* OrderView.swift */; };
+		A028ABDE29ACA14E0038F899 /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028ABDD29ACA14E0038F899 /* Appetizer.swift */; };
+		A028ABE029ACA67A0038F899 /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028ABDF29ACA6790038F899 /* AppetizerListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		A028ABD729AC7E7F0038F899 /* AppetizerOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerOrderView.swift; sourceTree = "<group>"; };
 		A028ABD929AC7E880038F899 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		A028ABDB29AC7E8C0038F899 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		A028ABDD29ACA14E0038F899 /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
+		A028ABDF29ACA6790038F899 /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 		A028ABBB29AC7E200038F899 = {
 			isa = PBXGroup;
 			children = (
+				A028ABDD29ACA14E0038F899 /* Appetizer.swift */,
 				A028ABC629AC7E200038F899 /* Appetizers */,
 				A028ABC529AC7E200038F899 /* Products */,
 			);
@@ -62,6 +67,7 @@
 				A028ABC729AC7E200038F899 /* AppetizersApp.swift */,
 				A028ABC929AC7E200038F899 /* AppetizerTabView.swift */,
 				A028ABD529AC7E720038F899 /* AppetizerListView.swift */,
+				A028ABDF29ACA6790038F899 /* AppetizerListCell.swift */,
 				A028ABD729AC7E7F0038F899 /* AppetizerOrderView.swift */,
 				A028ABD929AC7E880038F899 /* AccountView.swift */,
 				A028ABDB29AC7E8C0038F899 /* OrderView.swift */,
@@ -151,8 +157,10 @@
 			files = (
 				A028ABCA29AC7E200038F899 /* AppetizerTabView.swift in Sources */,
 				A028ABC829AC7E200038F899 /* AppetizersApp.swift in Sources */,
+				A028ABE029ACA67A0038F899 /* AppetizerListCell.swift in Sources */,
 				A028ABD829AC7E7F0038F899 /* AppetizerOrderView.swift in Sources */,
 				A028ABDC29AC7E8C0038F899 /* OrderView.swift in Sources */,
+				A028ABDE29ACA14E0038F899 /* Appetizer.swift in Sources */,
 				A028ABD629AC7E720038F899 /* AppetizerListView.swift in Sources */,
 				A028ABDA29AC7E880038F899 /* AccountView.swift in Sources */,
 			);
