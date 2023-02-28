@@ -20,7 +20,7 @@ final class NetworkManager {
     private init() {}
     
     // Result has a success case and a failure case that return an array of Appetizer or an Error respectively
-    func getAppetizers(completed: @escaping (Result<[Appetizer], APError>) -> Void) {
+    func getAppetizers(completed: @escaping (Result<[Appetizer], APNetworkError>) -> Void) {
         // Usually occurs when network is down
         guard let url = URL(string: appetizerURL) else {
             completed(.failure(.invalidURL))

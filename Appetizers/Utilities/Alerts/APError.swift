@@ -7,9 +7,14 @@
 
 import Foundation
 
-enum APError: Error {
+enum APNetworkError: Error {
     case invalidURL
     case invalidResponse
     case invalidData
     case unableToComplete
+}
+
+enum APFormError: Error {
+    case invalidForm
+    case invalidEmail
 }
