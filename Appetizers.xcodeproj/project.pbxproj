@@ -23,6 +23,7 @@
 		A028ABEA29ACEB840038F899 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028ABE929ACEB840038F899 /* LoadingView.swift */; };
 		A028ABEC29ACEC510038F899 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028ABEB29ACEC510038F899 /* Color+Ext.swift */; };
 		A028ABEE29AD072D0038F899 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028ABED29AD072D0038F899 /* RemoteImage.swift */; };
+		A028AC0C29AE25980038F899 /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028AC0B29AE25980038F899 /* AppetizerDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		A028ABE929ACEB840038F899 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		A028ABEB29ACEC510038F899 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		A028ABED29AD072D0038F899 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		A028AC0B29AE25980038F899 /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			children = (
 				A028ABD529AC7E720038F899 /* AppetizerListView.swift */,
 				A028ABE529ACB8DA0038F899 /* AppetizerListViewModel.swift */,
+				A028AC0B29AE25980038F899 /* AppetizerDetailView.swift */,
 			);
 			path = AppetizerListView;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				A028ABE829ACCE690038F899 /* Alert.swift in Sources */,
 				A028ABE429ACA7540038F899 /* APError.swift in Sources */,
 				A028ABDC29AC7E8C0038F899 /* OrderView.swift in Sources */,
+				A028AC0C29AE25980038F899 /* AppetizerDetailView.swift in Sources */,
 				A028ABDE29ACA14E0038F899 /* Appetizer.swift in Sources */,
 				A028ABD629AC7E720038F899 /* AppetizerListView.swift in Sources */,
 				A028ABEA29ACEB840038F899 /* LoadingView.swift in Sources */,
