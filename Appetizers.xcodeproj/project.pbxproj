@@ -28,6 +28,7 @@
 		A028AC1129AE30FF0038F899 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028AC1029AE30FF0038F899 /* XDismissButton.swift */; };
 		A028AC1329AE53920038F899 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028AC1229AE53920038F899 /* AccountViewModel.swift */; };
 		A028AC1529AE55490038F899 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028AC1429AE55490038F899 /* String+Ext.swift */; };
+		A028AC1729AE588D0038F899 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028AC1629AE588D0038F899 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		A028AC1029AE30FF0038F899 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		A028AC1229AE53920038F899 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		A028AC1429AE55490038F899 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		A028AC1629AE588D0038F899 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				A028ABDD29ACA14E0038F899 /* Appetizer.swift */,
+				A028AC1629AE588D0038F899 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				A028ABEE29AD072D0038F899 /* RemoteImage.swift in Sources */,
 				A028ABE629ACB8DA0038F899 /* AppetizerListViewModel.swift in Sources */,
 				A028ABC829AC7E200038F899 /* AppetizersApp.swift in Sources */,
+				A028AC1729AE588D0038F899 /* User.swift in Sources */,
 				A028AC0F29AE30760038F899 /* APButton.swift in Sources */,
 				A028ABE029ACA67A0038F899 /* AppetizerListCell.swift in Sources */,
 				A028ABE829ACCE690038F899 /* Alert.swift in Sources */,
