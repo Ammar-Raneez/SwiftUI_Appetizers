@@ -11,10 +11,12 @@ import SwiftUI
 // main function must be run. Called within the App protocol
 
 struct AppetizersApp: App {
+    var order = Order()
+    
     // scene builder instead of view builder. Scene -> Window of app that can have multiple views
     var body: some Scene {
         WindowGroup {
-            AppetizerTabView()
+            AppetizerTabView().environmentObject(order)
         }
     }
 }
