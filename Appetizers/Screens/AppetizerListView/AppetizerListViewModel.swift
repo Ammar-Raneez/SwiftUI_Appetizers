@@ -57,7 +57,21 @@ final class AppetizerListViewModel: ObservableObject {
                 appetizers = try await NetworkManager.shared.getAppetizers()
                 isLoading = false
             } catch {
-                alertItem = AlertContext.unableToComplete
+                if let caughtError = error as? APNetworkError {
+                    switch caughtError {
+                    case .invalidURL:
+                        alertItem = AlertContext.invalidURL
+                    case .invalidData:
+                        alertItem = AlertContext.invalidData
+                    case .invalidResponse:
+                        alertItem = AlertContext.invalidResponse
+                    case .unableToComplete:
+                        alertItem = AlertContext.unableToComplete
+                    }
+                } else {
+                    alertItem = AlertContext.unableToComplete
+                }
+                
                 isLoading = false
             }
         }
