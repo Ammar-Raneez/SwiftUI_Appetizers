@@ -10,13 +10,33 @@ import SwiftUI
 struct AccountView: View {
     @StateObject var viewModel = AccountViewModel()
     
+    // ios 15 wrapper for better UX of keywboards
+    // go to next line on next click on mobile keyboard
+    @FocusState private var focusField: FormTextField?
+    
+    enum FormTextField {
+        case firstName, lastName, email
+    }
+    
     var body: some View {
         NavigationView {
             Form {
                 Section(header: Text("Personal Info")) {
                     TextField("First Name", text: $viewModel.user.firstName)
+                        //  set focusField as firstName on focus of this field
+                        .focused($focusField, equals: .firstName)
+                        // move to next form field
+                        .onSubmit { focusField = .lastName }
+                        .submitLabel(.next)
                     TextField("Last Name", text: $viewModel.user.lastName)
+                        .focused($focusField, equals: .lastName)
+                        .onSubmit { focusField = .email }
+                        .submitLabel(.next)
                     TextField("Email", text: $viewModel.user.email)
+                        .focused($focusField, equals: .email)
+                        // close keyboard at the last field
+                        .onSubmit { focusField = nil }
+                        .submitLabel(.continue)
                         .keyboardType(.emailAddress)
                         .autocorrectionDisabled()
                         .autocapitalization(.none)
@@ -35,6 +55,11 @@ struct AccountView: View {
                 .toggleStyle(SwitchToggleStyle(tint: .brandPrimary))
             }
             .navigationTitle("Account")
+            .toolbar {
+                ToolbarItemGroup(placement: .keyboard) {
+                    Button("Dismiss") { focusField = nil }
+                }
+            }
         }
         .onAppear {
             viewModel.retrieveUser()
