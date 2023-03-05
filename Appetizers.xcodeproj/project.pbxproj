@@ -31,6 +31,7 @@
 		A028AC1729AE588D0038F899 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028AC1629AE588D0038F899 /* User.swift */; };
 		A028AC1A29AE5ECD0038F899 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028AC1929AE5ECD0038F899 /* EmptyState.swift */; };
 		A0AADF4229B4922100CDCFC4 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AADF4129B4922100CDCFC4 /* Order.swift */; };
+		A0AADF4429B49F6E00CDCFC4 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AADF4329B49F6E00CDCFC4 /* CustomModifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		A028AC1629AE588D0038F899 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A028AC1929AE5ECD0038F899 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		A0AADF4129B4922100CDCFC4 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		A0AADF4329B49F6E00CDCFC4 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 				A028ABFB29AD0B480038F899 /* Image */,
 				A028ABFA29AD0B2B0038F899 /* Cells */,
 				A028ABF929AD0B230038F899 /* UIKit Components */,
+				A0AADF4329B49F6E00CDCFC4 /* CustomModifiers.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				A028AC0C29AE25980038F899 /* AppetizerDetailView.swift in Sources */,
 				A028ABDE29ACA14E0038F899 /* Appetizer.swift in Sources */,
 				A028ABD629AC7E720038F899 /* AppetizerListView.swift in Sources */,
+				A0AADF4429B49F6E00CDCFC4 /* CustomModifiers.swift in Sources */,
 				A028ABEA29ACEB840038F899 /* LoadingView.swift in Sources */,
 				A028ABDA29AC7E880038F899 /* AccountView.swift in Sources */,
 			);
