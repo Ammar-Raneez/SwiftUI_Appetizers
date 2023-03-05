@@ -20,42 +20,63 @@ final class NetworkManager {
     private init() {}
     
     // Result has a success case and a failure case that return an array of Appetizer or an Error respectively
-    func getAppetizers(completed: @escaping (Result<[Appetizer], APNetworkError>) -> Void) {
-        // Usually occurs when network is down
+//    func getAppetizers(completed: @escaping (Result<[Appetizer], APNetworkError>) -> Void) {
+//        // Usually occurs when network is down
+//        guard let url = URL(string: appetizerURL) else {
+//            completed(.failure(.invalidURL))
+//            return
+//        }
+//
+//        // Create url task and handle each of the 3 values
+//        let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
+//            if let _ = error {
+//                completed(.failure(.unableToComplete))
+//                return
+//            }
+//
+//            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+//                completed(.failure(.invalidResponse))
+//                return
+//            }
+//
+//            guard let data = data else {
+//                completed(.failure(.invalidData))
+//                return
+//            }
+//
+//            do {
+//                let decoder = JSONDecoder()
+//                let decodedResponse = try decoder.decode(AppetizerResponse.self, from: data)
+//                completed(.success(decodedResponse.request))
+//            } catch {
+//                completed(.failure(.invalidData))
+//            }
+//        }
+//
+//        // Fire off network call
+//        task.resume()
+//    }
+//
+
+    // ios 15 async await syntax
+    func getAppetizers() async throws -> [Appetizer] {
+        // Safely unwrap the url
         guard let url = URL(string: appetizerURL) else {
-            completed(.failure(.invalidURL))
-            return
+            throw APNetworkError.invalidURL
         }
         
-        // Create url task and handle each of the 3 values
-        let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
-            if let _ = error {
-                completed(.failure(.unableToComplete))
-                return
-            }
-            
-            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
-                completed(.failure(.invalidResponse))
-                return
-            }
-            
-            guard let data = data else {
-                completed(.failure(.invalidData))
-                return
-            }
-            
-            do {
-                let decoder = JSONDecoder()
-                let decodedResponse = try decoder.decode(AppetizerResponse.self, from: data)
-                completed(.success(decodedResponse.request))
-            } catch {
-                completed(.failure(.invalidData))
-            }
-        }
+        // async await succint syntax fetch data
+        let (data, _) = try await URLSession.shared.data(from: url)
         
-        // Fire off network call
-        task.resume()
+        // try catch
+        do {
+            let decoder = JSONDecoder()
+            return try decoder.decode(AppetizerResponse.self, from: data).request
+        } catch {
+            throw APNetworkError.invalidData
+        }
     }
+    
     
     // No need Result type as failure case is not important
     func downloadImage(fromUrlString urlString: String, completed: @escaping (UIImage?) -> Void) {
