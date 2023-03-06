@@ -30,6 +30,7 @@
 		A028AC1529AE55490038F899 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028AC1429AE55490038F899 /* String+Ext.swift */; };
 		A028AC1729AE588D0038F899 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028AC1629AE588D0038F899 /* User.swift */; };
 		A028AC1A29AE5ECD0038F899 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028AC1929AE5ECD0038F899 /* EmptyState.swift */; };
+		A03DCC9629B5993300F1684D /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03DCC9529B5993300F1684D /* Date+Ext.swift */; };
 		A0AADF4229B4922100CDCFC4 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AADF4129B4922100CDCFC4 /* Order.swift */; };
 		A0AADF4429B49F6E00CDCFC4 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AADF4329B49F6E00CDCFC4 /* CustomModifiers.swift */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		A028AC1429AE55490038F899 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		A028AC1629AE588D0038F899 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A028AC1929AE5ECD0038F899 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		A03DCC9529B5993300F1684D /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		A0AADF4129B4922100CDCFC4 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		A0AADF4329B49F6E00CDCFC4 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -173,6 +175,7 @@
 			children = (
 				A028ABEB29ACEC510038F899 /* Color+Ext.swift */,
 				A028AC1429AE55490038F899 /* String+Ext.swift */,
+				A03DCC9529B5993300F1684D /* Date+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				A028ABE229ACA6E40038F899 /* NetworkManager.swift in Sources */,
 				A028ABEC29ACEC510038F899 /* Color+Ext.swift in Sources */,
 				A028AC1129AE30FF0038F899 /* XDismissButton.swift in Sources */,
+				A03DCC9629B5993300F1684D /* Date+Ext.swift in Sources */,
 				A028ABCA29AC7E200038F899 /* AppetizerTabView.swift in Sources */,
 				A0AADF4229B4922100CDCFC4 /* Order.swift in Sources */,
 				A028AC1329AE53920038F899 /* AccountViewModel.swift in Sources */,
